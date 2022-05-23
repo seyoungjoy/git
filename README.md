@@ -54,3 +54,8 @@ HEAD : 현재 위치
 `git reset HEAD~1` : commit 내역 한단계 되돌아감.
 - 실수했던 커밋 자체를 없애버림.
 
+git reset HEAD~1 --soft(staged)
+git reset HEAD~1 --midexd(default)(unstaged)
+
+git reset hard : 수정한 내역들을 모두 되돌리고 싶을 때 (rollback)
+git reset log숫자 : 해당 버전으로 바로 이동
