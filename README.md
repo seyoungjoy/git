@@ -12,7 +12,7 @@
 
 ## git add
 - git add . 모두 stage로 올리겠다.
-- git rm cashed
+- git rm --cashed 로 
 
 ## .gitignore
 - git에서 관리 제외할 파일 설정 가능.
@@ -49,3 +49,8 @@ git checkout -- code1.txt
 - 
 
 ## reset
+- 실수로 커밋했을 때 사용
+HEAD : 현재 위치 
+`git reset HEAD~1` : commit 내역 한단계 되돌아감.
+- 실수했던 커밋 자체를 없애버림.
+
