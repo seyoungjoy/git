@@ -29,6 +29,7 @@
 - 커밋한 이력들을 볼 수 있다.
 
 ## vim 끄튼법 :q
+:wq
 
 ## checkout
 git checkout -- code1.txt
