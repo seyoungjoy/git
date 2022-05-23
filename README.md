@@ -60,3 +60,4 @@ git reset HEAD~1 --midexd(default)(unstaged)
 
 git reset hard : 수정한 내역들을 모두 되돌리고 싶을 때 (rollback)
 git reset log숫자 : 해당 버전으로 바로 이동
+
