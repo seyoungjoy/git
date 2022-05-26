@@ -55,9 +55,9 @@
   HEAD : 현재 위치
 - `git reset HEAD~1` : commit 내역 한단계 되돌아감.
 - 실수했던 커밋 자체를 없애버림.
-git reset HEAD~1 --soft : 커밋 취소 후 staged로
-git reset HEAD~1 --mixed : 기본, 커밋 취소 후 unstaged로
-git reset --hard HEAD~1 : 저장된 커밋들 중 하나로 헤드를 이동하는 작업.
+`git reset HEAD~1 --soft` : 커밋 취소 후 staged로
+`git reset HEAD~1 --mixed` : 기본, 커밋 취소 후 unstaged로
+`git reset --hard HEAD~1` : 저장된 커밋들 중 하나로 헤드를 이동하는 작업.
 만약 reset을 실수로 했다면 git reflog를 통해 과거의 커밋내력을 보고 해당 로그로
-git reset --hard <돌아갈 커밋로그>
+`git reset --hard <돌아갈 커밋로그>`
 
