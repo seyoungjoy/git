@@ -37,6 +37,7 @@
 ## rollback
 ### `git restore index.js`
 - staged 되지 않은 상태에서, 커밋이력으로 롤백하고 싶을 때
+- 원래 git checkout 명령어였는데 깃 버전 업데이트하면서 restore로 바뀜. 브랜치 바꿀때 사용하는 명령어랑 똑같아서 헷갈렸음.
 ### `git restore --staged index.js`
 - staged된(add를 했음) 파일을 다시 내리고 싶을 때
 
