@@ -62,3 +62,23 @@
 만약 reset을 실수로 했다면 git reflog를 통해 과거의 커밋내력을 보고 해당 로그로
 `git reset --hard <돌아갈 커밋로그>`
 
+## git commit 내역 삭제
+1. git commit 내역 확인
+```
+git log
+```
+
+2. commit 내역 삭제
+```
+git reset HEAD~숫자 // 삭제하고싶은 커밋 개수
+git log // 삭제 되었는지 확인
+```
+
+3. remote에 삭제한 커밋 내역 push
+- 커밋 히스토리를 강제로 push하기 때문에 `--force` or `-f` 명령어 추가.
+
+```
+git push -f origin [branch name]
+```
+
+❗ 내가 커밋한 내용을 다른 사람이 pull 받았으면 삭제한 커밋 내역 적용안됨.
