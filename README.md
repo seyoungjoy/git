@@ -1,6 +1,9 @@
 # git
-## git 왜 사용해?
-- 버전관리, 협업을 위해
+- 버전관리, 협업을 위해 사용
+
+## TroubleShooting
+- [repository not found error](/troubleShooting/repository-not-found.md)
+
 
 ## git init
 - git 초기화
