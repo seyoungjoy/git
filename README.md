@@ -4,6 +4,9 @@
 ## TroubleShooting
 - [repository not found error](/troubleShooting/repository-not-found.md)
 
+## concept
+- 
+
 
 ## git init
 - git 초기화
