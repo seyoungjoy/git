@@ -4,6 +4,31 @@
 ## TroubleShooting
 - [repository not found error](/troubleShooting/repository-not-found.md)
 
+### 다른 장소에 있는 레포 미러링하기
+- clone의 옵션은 3가지가 있다.
+  - clone(non-bare) : 기존 커밋 로그 불필요, 레포만 복사
+  - clone --bare : 기존 커밋 로그 필요, 원격브랜치 필요없음.
+  - clone --mirror : 기존 커밋로그와 브랜치 모두를 들고옴(기존 레포와 같은 환경)
+
+1. 클론할 레포를 클론
+```
+$ git clone --mirror https://github.com/EXAMPLE-USER/REPOSITORY-TO-MIRROR.git
+```
+2. mirror한 폴더 위치에서 옮길 remote url을 설정
+```
+$ cd REPOSITORY-TO-MIRROR
+$ git remote set-url --push origin https://github.com/EXAMPLE-USER/MIRRORED
+```
+3. 옮길 url에 push
+```
+$ git fetch -p origin
+$ git push --mirror
+```
+
+- reference
+  - https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository
+
+
 ## concept
 - 
 
