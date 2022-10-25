@@ -28,7 +28,15 @@ $ git push --mirror
 - reference
   - https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository
 
+### 동시에 두 개의 다른 레포에 push 하기
+1. `git remote add` 명령어를 통해 push 되는 remote가 2개로 설정되면 된다.
+```
+git remote set-url origin --push --add [git url]
+```
+<img width="486" alt="image" src="https://user-images.githubusercontent.com/85421850/197744692-2d56f503-28fb-4b34-981b-dd9a11103653.png">
 
+- reference
+  - https://twofootdog.tistory.com/42
 ## concept
 - 
 
