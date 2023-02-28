@@ -21,7 +21,7 @@ $ git remote set-url --push origin https://github.com/EXAMPLE-USER/MIRRORED
 ```
 3. 옮길 url에 push
 ```
-$ git fetch -p origin
+
 $ git push --mirror
 ```
 
